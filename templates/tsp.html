@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Titanic Survival Prediction</title>
+    </head>
+    <body>
+        <form action="{{url_for('predict')}}" method="POST">
+        <input name="pclass" id="pclass" type="text">
+        <input name="age" id="age" type="text">
+        <input name="sex" id="sex" type="text">
+        <input name="fare" id="fare" type="text">
+        <button type="submit">Submit</button>
+        <h1>{{predict}}</h1>
+        </form>
+    </body>
+</html>
